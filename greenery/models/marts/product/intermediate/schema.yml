@@ -3,3 +3,5 @@ version: 2
 models:
   - name: int_session_events_agg
     description: Aggregated session events by user
+  - name: int_conversion_average
+    description: provide average conversion rate
