@@ -38,3 +38,9 @@ models:
       +materialized: view
     marts:
       +materialized: table
+    post-hook:
+      - "grant select on {{ this }} to reporting"
+    on-run-end:
+      - "grant usage on schema {{ schema }} to role reporting"
+      
+

@@ -7,4 +7,6 @@ models:
       - name: user_id
         tests:
           - not_null
+  - name: sb_conversion_rate
+    description: converstion rate
           
